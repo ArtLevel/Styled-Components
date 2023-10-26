@@ -1,25 +1,13 @@
-import { styled } from 'styled-components'
-import { Link } from './Link.styled'
-import { theme } from '../styles/Theme.styled'
+import { css, styled } from 'styled-components'
 
-export const Box = styled.div`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+interface IBox {
+	boxType: 'ButtonsBlock'
+}
 
-  gap: 20px;
+export const Box = styled.p<IBox>`
+  ${props => props.boxType === 'ButtonsBlock' && css<IBox>`
+    display: flex;
 
-  button {
-    cursor: pointer;
-  }
-
-  ${Link} {
-    cursor: zoom-in;
-  }
-
-  @media ${theme.media.tablet} {
-    flex-direction: column;
-  }
+    gap: 12px;
+  `}
 `

@@ -1,17 +1,28 @@
 import React from 'react'
-import './App.css'
-import { StyledBtn } from './components/Button.styled'
+import { Card } from './components/Card.styled'
+import { Img } from './components/Img.styled'
+import desert from './assets/Desert.jpg'
+import { Button } from './components/Button.styled'
+import { Container } from './components/Container.styled'
+import { Paragraph } from './components/Paragraph.styled'
 import { Box } from './components/Box.styled'
-import { theme } from './styles/Theme.styled'
 
 function App() {
 	return (
-		<div className='App'>
-			<Box>
-				<StyledBtn color={theme.colors.primary} btnType='primary' active>Hello</StyledBtn>
-				<StyledBtn color={theme.colors.secondary} btnType='outlined'>Hello</StyledBtn>
-			</Box>
-		</div>
+		<Container>
+			<Card>
+				<Img src={desert} />
+				<Paragraph fontSize='16px' fontWeight='bold' paragraphType='h3'>Headline</Paragraph>
+				<Paragraph fontSize='12px' fontWeight='medium' paragraphType='p'>Faucibus. Faucibus. Sit sit sapien sit
+					tempusrisu ut. Sit
+					molestie ornare in
+					venen.</Paragraph>
+				<Box boxType='ButtonsBlock'>
+					<Button>See more</Button>
+					<Button>Save</Button>
+				</Box>
+			</Card>
+		</Container>
 	)
 }
 

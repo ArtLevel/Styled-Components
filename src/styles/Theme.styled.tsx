@@ -1,15 +1,10 @@
 export const theme = {
 	colors: {
-		primary: 'gold',
-		secondary: 'pink',
+		primary: '#4E71FE',
+		secondary: 'white',
 		grey: {
-			dark: '#2f2c2c',
-			light: '#d2d2d2'
+			dark: '#000000',
+			light: '#ABB3BA'
 		}
-	},
-
-	media: {
-		tablet: 'screen and (max-width: 786px)',
-		mobile: 'screen and (max-width: 576px)'
 	}
 }
