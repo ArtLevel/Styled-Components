@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { Link } from './Link.styled'
+import { theme } from '../styles/Theme.styled'
 
 export const Box = styled.div`
   width: 100%;
@@ -18,7 +19,7 @@ export const Box = styled.div`
     cursor: zoom-in;
   }
 
-  @media screen and (max-width: 800px) {
+  @media ${theme.media.tablet} {
     flex-direction: column;
   }
 `
