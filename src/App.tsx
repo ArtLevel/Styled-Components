@@ -4,6 +4,7 @@ import { Main } from './layout/sections/main/Main'
 import { Skills } from './layout/sections/skills/Skills'
 import './App.css'
 import { Works } from './layout/sections/works/Works'
+import { Testimony } from './layout/sections/testimony/Testimony'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 			<Main />
 			<Skills />
 			<Works />
+			<Testimony />
 		</div>
 	)
 }
