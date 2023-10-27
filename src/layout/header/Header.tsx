@@ -16,6 +16,4 @@ const StyledHeader = styled.header`
   background-color: darkseagreen;
   display: flex;
   justify-content: space-between;
-
-  padding: 0 20px;
 `
