@@ -1,29 +1,19 @@
-import React from 'react'
-import { Card } from './components/Card.styled'
-import { Img } from './components/Img.styled'
-import desert from './assets/Desert.jpg'
-import { Button } from './components/Button.styled'
-import { Container } from './components/Container.styled'
-import { Paragraph } from './components/Paragraph.styled'
-import { Box } from './components/Box.styled'
+import './App.css';
+import styled from 'styled-components';
+
 
 function App() {
-	return (
-		<Container>
-			<Card>
-				<Img src={desert} />
-				<Paragraph fontSize='16px' fontWeight='bold' paragraphType='h3'>Headline</Paragraph>
-				<Paragraph fontSize='12px' fontWeight='medium' paragraphType='p'>Faucibus. Faucibus. Sit sit sapien sit
-					tempusrisu ut. Sit
-					molestie ornare in
-					venen.</Paragraph>
-				<Box boxType='ButtonsBlock'>
-					<Button>See more</Button>
-					<Button>Save</Button>
-				</Box>
-			</Card>
-		</Container>
-	)
+    return (
+        <div className="App">
+            <Title>Welcome to IT-INCUBATOR</Title>
+        </div>
+    );
 }
 
-export default App
+export default App;
+
+const Title = styled.h1`
+    font-size: 1.5em;
+    text-align: center;
+    color: #e91e63;
+`;
