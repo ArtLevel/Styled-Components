@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SectionTitle } from '../../../components/common/SectionTitle.styled'
-import { Menu } from '../../../components/menu/Menu'
+import { TabMenu } from './tabMenu/tabMenu'
 import { FlexWrapper } from '../../../components/common/FlexWrapper.styled'
 import { Work } from './work/Work'
 
 import projectSocialNetwork from '../../../assets/images/projects/projectSocialNetwork.webp'
 import projectCounter from '../../../assets/images/projects/projectCounter.webp'
+import { Container } from '../../../components/common/Container.styled'
 
 const workItems = [
 	'All',
@@ -18,29 +19,30 @@ const workItems = [
 export const Works = () => {
 	return (
 		<StyledWorks>
-			<SectionTitle>My Works</SectionTitle>
-			<Menu items={workItems} />
+			<Container>
 
-			<FlexWrapper justify='space-around'>
-				<Work
-					src={projectSocialNetwork}
-					title='Social Network'
-					text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-				      labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-				/>
-				<Work
-					src={projectCounter}
-					title='Timer'
-					text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-				      labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-				/>
-			</FlexWrapper>
+				<SectionTitle>My Works</SectionTitle>
+				<TabMenu items={workItems} />
 
+				<FlexWrapper justify='space-between' align='flex-start'>
+					<Work
+						src={projectSocialNetwork}
+						title='Social Network'
+						text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+				      labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+					/>
+					<Work
+						src={projectCounter}
+						title='Timer'
+						text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+				      labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+					/>
+				</FlexWrapper>
+
+			</Container>
 		</StyledWorks>
 	)
 }
 
 const StyledWorks = styled.section`
-  min-height: 100vh;
-  background-color: darksalmon;
 `
