@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SectionTitle } from '../../../components/common/SectionTitle'
+import { SectionTitle } from '../../../components/common/SectionTitle.styled'
 import { Menu } from '../../../components/menu/Menu'
-import { FlexWrapper } from '../../../components/common/FlexWrapper'
+import { FlexWrapper } from '../../../components/common/FlexWrapper.styled'
 import { Work } from './work/Work'
 
 import projectSocialNetwork from '../../../assets/images/projects/projectSocialNetwork.webp'

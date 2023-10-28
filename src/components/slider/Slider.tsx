@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FlexWrapper } from '../common/FlexWrapper'
+import { FlexWrapper } from '../common/FlexWrapper.styled'
 
 export const Slider = () => {
 	return (

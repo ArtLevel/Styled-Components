@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FlexWrapper } from '../../../components/common/FlexWrapper'
+import { FlexWrapper } from '../../../components/common/FlexWrapper.styled'
 import { Skill } from './skill/Skill'
-import { SectionTitle } from '../../../components/common/SectionTitle'
+import { SectionTitle } from '../../../components/common/SectionTitle.styled'
 
 export const Skills = () => {
 	return (

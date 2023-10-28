@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SectionTitle } from '../../../components/common/SectionTitle'
-import { StyledButton } from '../../../components/common/Button'
+import { SectionTitle } from '../../../components/common/SectionTitle.styled'
+import { StyledButton } from '../../../components/common/Button.styled'
 
 export const Contacts = () => {
 	return (
@@ -19,7 +19,7 @@ export const Contacts = () => {
 	)
 }
 
-const StyledContacts = styled.div`
+const StyledContacts = styled.section`
   min-height: 50vh;
   background-color: lightcoral;
 `

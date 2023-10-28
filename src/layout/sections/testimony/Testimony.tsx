@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SectionTitle } from '../../../components/common/SectionTitle'
+import { SectionTitle } from '../../../components/common/SectionTitle.styled'
 import { Icon } from '../../../components/icon/Icon'
 import { Slider } from '../../../components/slider/Slider'
-import { FlexWrapper } from '../../../components/common/FlexWrapper'
+import { FlexWrapper } from '../../../components/common/FlexWrapper.styled'
 
 export const Testimony = () => {
 	return (

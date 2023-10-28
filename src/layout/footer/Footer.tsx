@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SocialList } from './socialList/SocialList'
-import { FlexWrapper } from '../../components/common/FlexWrapper'
+import { FlexWrapper } from '../../components/common/FlexWrapper.styled'
 
 const SocialIconItems = [
 	'instagram',

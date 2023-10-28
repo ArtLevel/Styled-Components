@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SectionTitle } from '../../../components/common/SectionTitle'
-import { StyledButton } from '../../../components/common/Button'
+import { SectionTitle } from '../../../components/common/SectionTitle.styled'
+import { StyledButton } from '../../../components/common/Button.styled'
 
 export const Slogan = () => {
 	return (
