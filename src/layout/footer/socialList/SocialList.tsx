@@ -18,5 +18,8 @@ export const SocialList: FC<ISocialList> = (props) => {
 
 const StyledSocialList = styled.ul`
   display: flex;
+
+  margin: 30px 0;
+
   gap: 20px;
 `
