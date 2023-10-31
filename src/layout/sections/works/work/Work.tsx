@@ -30,9 +30,10 @@ export const Work: FC<IWork> = (props) => {
 }
 
 const StyledWork = styled.div`
-  width: 100%;
-  max-width: 540px;
+  width: 330px;
   background-color: ${theme.colors.secondaryBgColor};
+
+  flex-grow: 1;
 
   ${Link} {
     padding: 10px 0;
@@ -41,23 +42,32 @@ const StyledWork = styled.div`
       margin-left: 20px;
     }
   }
+
+  @media ${theme.media.desktop} {
+    max-width: 540px;
+  }
 `
 
 const ImageWrapper = styled.div`
   position: relative;
 
+  &::before {
+    content: '';
+    opacity: 0;
+
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(4px);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
   &:hover {
     &::before {
-      content: '';
-
-      background: rgba(0, 0, 0, 0.30);
-      backdrop-filter: blur(4px);
-
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
+      opacity: 1;
     }
 
     ${StyledButton} {
@@ -75,6 +85,16 @@ const ImageWrapper = styled.div`
     &::before {
       width: 100%;
       height: 100%;
+    }
+  }
+
+  @media ${theme.media.tablet} {
+    &::before {
+      opacity: 1;
+    }
+
+    ${StyledButton} {
+      opacity: 1;
     }
   }
 `

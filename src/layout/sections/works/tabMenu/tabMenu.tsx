@@ -22,15 +22,18 @@ export const TabMenu: FC<IMenu> = (props) => {
 }
 
 const StyledTabMenu = styled.nav`
-  margin-bottom: 40px;
-
   ul {
+    max-width: 352px;
+    width: 100%;
+
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+
+    border: 1px solid lavender;
   }
 `
 
 const ListItem = styled.li`
-  
+
 `
