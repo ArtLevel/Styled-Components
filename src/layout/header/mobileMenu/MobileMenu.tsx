@@ -11,11 +11,11 @@ export const MobileMenu: FC<IMenu> = (props) => {
 
 	return (
 		<StyledMobileMenu>
-			<BurgerButton isOpen={true}>
+			<BurgerButton isOpen={false}>
 				<span></span>
 			</BurgerButton>
 
-			<MobileMenuPopup isOpen={true}>
+			<MobileMenuPopup isOpen={false}>
 				<ul>
 					{items.map((title, index) => <ListItem key={index}>
 						<Link href='#'>
