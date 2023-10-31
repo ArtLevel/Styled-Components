@@ -3,6 +3,7 @@ import { Icon } from '../../../../components/icon/Icon'
 import styled from 'styled-components'
 import { FlexWrapper } from '../../../../components/common/FlexWrapper.styled'
 import { IconWrapper } from '../../../../components/common/IconWrapper.styled'
+import { theme } from '../../../../styles/Theme'
 
 interface ISkill {
 	iconId: string
@@ -27,9 +28,15 @@ export const Skill: FC<ISkill> = (props) => {
 }
 
 const StyledSkill = styled.div`
-  width: 380px;
+  width: 330px;
+  flex-grow: 1;
 
   padding: 60px 20px 40px;
+
+  @media ${theme.media.mobile} {
+    padding: 60px 0 40px;
+
+  }
 `
 
 const SkillTitle = styled.h3`
