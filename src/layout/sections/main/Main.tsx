@@ -50,8 +50,6 @@ const PhotoWrapper = styled.div`
   position: relative;
   z-index: 0;
 
-  margin-top: 65px;
-
   &::before {
     content: '';
     width: 360px;
@@ -72,6 +70,10 @@ const PhotoWrapper = styled.div`
       left: 17px;
     }
   }
+		
+		@media ${theme.media.mobile} {
+        margin-top: 65px;
+		}
 `
 
 const MainTitle = styled.h1`

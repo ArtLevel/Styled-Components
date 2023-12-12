@@ -22,21 +22,23 @@ export const GlobalStyled = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
-
+286
     cursor: pointer;
     color: ${theme.colors.fontColor};
   }
 
   body {
     margin: 0;
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 
-    line-height: 1.2;
-    color: ${theme.colors.fontColor};
+      line-height: 1.2;
+      color: ${theme.colors.fontColor};
+
+      min-width: 360px;
   }
 
   section {

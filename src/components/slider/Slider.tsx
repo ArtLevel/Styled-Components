@@ -42,7 +42,7 @@ const Text = styled.p`
 
 const Name = styled.span`
   display: inline-block;
-  margin: 22px 0 42px;
+  margin: 22px 0 32px;
 
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
